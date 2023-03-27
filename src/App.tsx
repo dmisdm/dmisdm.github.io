@@ -9,7 +9,7 @@ import RMITIcon from "../assets/rmit.png";
 import "@lottiefiles/lottie-player";
 
 const Card = (props: { children: JSX.Element; class?: string }) => (
-  <div class={"rounded-lg p-6 " + (props.class ?? "")}>{props.children}</div>
+  <div class={" rounded-lg p-6 " + (props.class ?? "")}>{props.children}</div>
 );
 
 const Padding = (props: { size?: number }) => (
