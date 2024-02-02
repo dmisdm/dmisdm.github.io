@@ -195,7 +195,7 @@ const App = () => {
                 <h3 class="m-0 pb-4">
                   Doctor of Philosophy (PhD. Computer Science)
                   <br />
-                  <small>since Jan 2022 - deferred</small>
+                  <small>since Mar 2022 - deferred</small>
                   <br />
                   <small>RMIT</small>
                 </h3>
@@ -203,16 +203,13 @@ const App = () => {
                   Eight months of academic research into the intersection
                   between deep reinforcement learning (e.g. PPO) and large
                   pretrained language models (e.g. GPT, BERT), to understand how
-                  we can improve sequential decision making reasoning in the
-                  latter. I intensively studied how these language models
+                  we can improve overall reasoining capabilities in sequential decision making.
+                  I intensively studied how these language models
                   perform and can be used to play text-based games like{" "}
                   <a href="https://www.pcjs.org/software/pcx86/game/infocom/zork1/">
                     Zork
                   </a>
-                  , and found unanswered research questions - you'd be surprised
-                  how badly so called "intelligent" language models like ChatGPT
-                  can perform at simple games which humans can easily complete
-                  with basic reasoning skills. My passion lies here: to give
+                  , and, at the time, found unanswered research questions relating to their inability to determine which actions they can make, and what their long term effects are. My passion lies here: to give
                   language models the ability to think <em>slowly</em> rather
                   than quickly.
                 </p>
