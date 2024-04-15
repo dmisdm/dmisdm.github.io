@@ -16,33 +16,6 @@ const Padding = (props: { size?: number }) => (
   <div style={{ padding: `${(props.size ?? 1) / 2}rem` }} />
 );
 
-const ContactDetails = (props: { row?: boolean; class?: string }) => (
-  <div
-    class={"flex gap-4 prose-sm " + (props.class ?? "")}
-    classList={{ "flex-col": !props.row }}
-  >
-    <div>
-      <small>Email</small>
-      <br />
-      <a href="mailto:danielmanning213@gmail.com">
-        <strong>danielmanning213@gmail.com</strong>
-      </a>
-    </div>
-    <div>
-      <small>Mobile</small>
-      <br />
-      <strong>+61413406990</strong>
-    </div>
-    <div>
-      <small>Linkedin</small>
-      <br />
-      <a href="https://linkedin.com/in/dmcmanning">
-        <strong>linkedin.com/in/dmcmanning</strong>
-      </a>
-    </div>
-  </div>
-);
-
 const ExperienceCard = (props: {
   class?: string;
   children: JSX.Element;
@@ -50,7 +23,7 @@ const ExperienceCard = (props: {
 }) => (
   <div class={`py-8 ${props.class}`}>
     <div class="flex">
-      <div class="basis-20 p-2 flex justify-center items-start relative">
+      <div class="md:basis-20 p-2 flex justify-center items-start relative">
         {props.imgSrc ? (
           <img src={props.imgSrc} class="h-8 w-8 -mt-2 m-0" />
         ) : (
@@ -74,23 +47,23 @@ const App = () => {
       <div class="min-h-screen flex flex-col bg-stone-50 p-4">
         <main class="flex-1 print:pt-2 pt-[20vh]">
           <div class="prose print:prose-sm mx-auto pt-8">
-            <header class="flex relative">
-              <div class="flex flex-col items-center justify-start flex-shrink-0 ">
+            <header class="flex relative justify-center">
+              <div class="">
                 <img
                   src={ProfileImg}
                   alt="A profile picture of Daniel Manning"
-                  class="rounded-full h-40 m-0 -mb-8 z-10"
+                  class="rounded-full h-40 m-auto -mb-8 z-10"
                 />
                 <Padding />
-                <div class="px-8 py-4 rounded-lg bg-slate-700 prose prose-sm prose-invert">
+                <div class="px-8 py-4 relative prose prose-sm">
+                  <div class="absolute top-1 left-1 border-2 border-slate-600 h-full w-full rounded-lg" />
+                  <div class="absolute bg-inherit -top-1 -left-1 border-2 border-slate-600 h-full w-full rounded-lg" />
                   <h2 class="m-0">Daniel Manning</h2>
                   <p class="m-0 text-center">
                     Software Engineer <br /> AI Researcher
                   </p>
                 </div>
               </div>
-              <div class="flex-1" />
-              <ContactDetails class="justify-end text-end" />
             </header>
             <Padding size={2} />
             <section>
@@ -108,12 +81,9 @@ const App = () => {
                   for creating beautiful user experiences.
                 </h2>
                 <p class="text-[#3a4f9a]">
-                  My expertise lies in modern web development with a focus on
-                  React, TypeScript, NodeJS, Kotlin, and related backend
-                  technologies. I'm also interested in language and
-                  communication, and enjoy delving into academic research on
-                  language models and reinforcement learning, thus having plenty
-                  of experience with Python.
+                  My expertise lies in modern web development and
+                  infrastructure, with a focus on Next.JS, React, TypeScript,
+                  AWS, MongoDB and Postgres, and Deno/NodeJS.
                 </p>
                 <p class="text-end m-0 text-[#3a4f9a]">
                   <small>(site made using SolidJS + Vite + Tailwind!)</small>
@@ -123,10 +93,25 @@ const App = () => {
             <hr />
             <section class="flex flex-col gap-4">
               <h2 class="text-center mb-0 font-serif">Experience</h2>
+              <ExperienceCard imgSrc={ReadCloudIcon}>
+                <h3 class="m-0 pb-4">
+                  <a href="https://readcloud.com">ReadCloud</a> (since Mar 2023)
+                  <br />
+                  <small>Lead Software Engineer</small>
+                </h3>
+
+                <p class="m-0">
+                  An introduction into leading a small team of engineers, which
+                  involved planning, management, hiring, and product
+                  development. This role allowed me to lead the integration of
+                  technologies like Next.JS, AWS CDK + SST, and Supabase, for
+                  solving a diverse range of problems.
+                </p>
+              </ExperienceCard>
               <ExperienceCard imgSrc={CultureAmpIcon}>
                 <h3 class="m-0 pb-4">
-                  <a href="https://cultureamp.com">CultureAmp</a> (since Nov
-                  2019)
+                  <a href="https://cultureamp.com">CultureAmp</a> (Nov 2019 -
+                  Mar 2023)
                   <br />
                   <small>Snr. Software Engineer</small>
                 </h3>
@@ -203,15 +188,17 @@ const App = () => {
                   Eight months of academic research into the intersection
                   between deep reinforcement learning (e.g. PPO) and large
                   pretrained language models (e.g. GPT, BERT), to understand how
-                  we can improve overall reasoining capabilities in sequential decision making.
-                  I intensively studied how these language models
-                  perform and can be used to play text-based games like{" "}
+                  we can improve overall reasoining capabilities in sequential
+                  decision making. I intensively studied how these language
+                  models perform and can be used to play text-based games like{" "}
                   <a href="https://www.pcjs.org/software/pcx86/game/infocom/zork1/">
                     Zork
                   </a>
-                  , and, at the time, found unanswered research questions relating to their inability to determine which actions they can make, and what their long term effects are. My passion lies here: to give
-                  language models the ability to think <em>slowly</em> rather
-                  than quickly.
+                  , and, at the time, found unanswered research questions
+                  relating to their inability to determine which actions they
+                  can make, and what their long term effects are. My passion
+                  lies here: to give language models the ability to think{" "}
+                  <em>slowly</em> rather than quickly.
                 </p>
               </ExperienceCard>
               <ExperienceCard imgSrc={RMITIcon}>
@@ -284,15 +271,33 @@ const App = () => {
             <hr />
             <section>
               <h2 class="text-center font-serif">
-                Referees available on request!
+                Referees available on request
               </h2>
             </section>
           </div>
         </main>
       </div>
-      <footer class="bg-slate-600 text-white print:relative sticky bottom-0 border-t border-solid border-slate-400">
-        <div class="py-4 m-auto prose prose-invert">
-          <ContactDetails class="justify-center text-xs sm:text-sm" row />
+      <footer class="bg-slate-600 text-white print:relative sticky bottom-0 border-t border-solid border-slate-400 py-4 w-full">
+        <div class="grid grid-flow-row sm:grid-flow-col place-content-center gap-2 sm:gap-4 text-xs sm:text-sm prose prose-sm prose-invert m-auto">
+          <div>
+            <small>Email</small>
+            <br />
+            <a href="mailto:danielmanning213@gmail.com">
+              <strong>danielmanning213@gmail.com</strong>
+            </a>
+          </div>
+          <div>
+            <small>Mobile</small>
+            <br />
+            <strong>+61413406990</strong>
+          </div>
+          <div>
+            <small>Linkedin</small>
+            <br />
+            <a href="https://linkedin.com/in/dmcmanning">
+              <strong>linkedin.com/in/dmcmanning</strong>
+            </a>
+          </div>
         </div>
       </footer>
     </>
