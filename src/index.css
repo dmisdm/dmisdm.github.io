@@ -10,7 +10,7 @@ hr {
 }
 
 @media print {
-  hr {
-    page-break-before: always;
+  html {
+    font-size: 14px;
   }
 }
