@@ -52,14 +52,14 @@ const App = () => {
       <FancyBackground />
 
       <div class="flex flex-col min-h-screen p-4 print:text-[12px]">
-        <header class="w-full print:hidden">
-          <div class="prose prose-sm grid grid-flow-col text-xs max-w-full w-full place-items-center">
+        <header class="grid place-items-center w-full print:hidden">
+          <div class="prose prose-sm grid grid-flow-row md:grid-flow-col text-xs w-full place-items-end text-end md:text-start md:place-items-center ">
             <ContactDetails />
           </div>
         </header>
         <main class="flex-1 print:pt-0 pt-[20vh] max-w-2xl print:max-w-4xl mx-auto">
           <div class="grid grid-cols-3 gap-4">
-            <div class="grid place-content-center gap-4 py-2 print:border-slate-200 print:border-2 rounded-lg print:col-span-2 col-span-full">
+            <div class="grid place-content-center print:place-content-start gap-4 py-2  rounded-lg print:col-span-2 col-span-full">
               <img
                 src={ProfileImg}
                 alt="A profile picture of Daniel Manning"
@@ -72,7 +72,7 @@ const App = () => {
                 </p>
               </div>
             </div>
-            <div class="col-span-1 hidden print:grid rounded-lg prose prose-sm  p-2 place-content-end">
+            <div class="col-span-1 hidden rounded-lg prose prose-sm p-2 print:grid print:place-content-end">
               <ContactDetails />
             </div>
 
