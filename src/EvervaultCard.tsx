@@ -52,7 +52,7 @@ export function CardPattern({
     <div class="pointer-events-none">
       <div class="absolute inset-0 rounded-md  [mask-image:linear-gradient(white,transparent)] group-hover/card:opacity-50"></div>
       <div
-        class="absolute inset-0 rounded-md bg-gradient-to-r from-green-500 to-blue-700 opacity-0  group-hover/card:opacity-100 backdrop-blur-xl transition duration-500"
+        class="absolute inset-0 rounded-md bg-gradient-to-r from-amber-500 to-pink-700 opacity-0  group-hover/card:opacity-50 backdrop-blur-xl transition duration-500"
         style={style()}
       />
       <div

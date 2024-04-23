@@ -1,5 +1,5 @@
 import "@lottiefiles/lottie-player";
-import { type JSX, createSignal } from "solid-js";
+import { type JSX } from "solid-js";
 import ProfileImg from "../assets/Profile.jpg";
 import AirwallexIcon from "../assets/airwallex.svg";
 import CodingIcon from "../assets/code.json?url";
@@ -51,15 +51,15 @@ const App = () => {
     <>
       <FancyBackground />
 
-      <div class="flex flex-col min-h-screen p-4 print:text-[12px]">
-        <header class="grid place-items-center w-full print:hidden">
-          <div class="prose prose-sm grid grid-flow-row md:grid-flow-col text-xs w-full place-items-end text-end md:text-start md:place-items-center ">
+      <div class="flex flex-col min-h-screen print:text-[12px]">
+        <header class="grid place-items-center w-full print:hidden md:border-b-2 py-4 md:border-slate-300 md:sticky md:top-0 md:bg-white z-10">
+          <div class="prose prose-sm hidden md:grid grid-flow-row md:grid-flow-col gap-4 text-xs w-full place-items-end text-end md:text-start md:place-items-center px-2 md:px-0">
             <ContactDetails />
           </div>
         </header>
-        <main class="flex-1 print:pt-0 pt-[20vh] max-w-2xl print:max-w-4xl mx-auto">
-          <div class="grid grid-cols-3 gap-4">
-            <div class="grid place-content-center print:place-content-start gap-4 py-2  rounded-lg print:col-span-2 col-span-full">
+        <main class="flex-1 print:pt-0 md:pt-[20vh] pt-4 max-w-2xl print:max-w-4xl mx-auto px-4 pb-4 ">
+          <div class="grid sm:grid-cols-3 place-items-center sm:place-items-stretch gap-4 ">
+            <div class="grid md:place-content-center print:place-content-start place-content-start gap-4 py-2  rounded-lg print:col-span-2 col-span-2 md:col-span-full">
               <img
                 src={ProfileImg}
                 alt="A profile picture of Daniel Manning"
@@ -72,38 +72,40 @@ const App = () => {
                 </p>
               </div>
             </div>
-            <div class="col-span-1 hidden rounded-lg prose prose-sm p-2 print:grid print:place-content-end">
+            <div class="col-span-1 grid items-end md:hidden rounded-lg prose prose-sm p-2 print:grid print:place-content-end">
               <ContactDetails />
             </div>
 
             <section class="col-span-full relative rounded-lg p-6 text-center border-2 border-slate-500 prose prose-sm mx-auto max-w-full">
-              <div class="absolute top-4 left-0 border-t-2 border-slate-500 w-full" />
-              <div class="absolute top-1 left-2 h-2 w-2 rounded-full bg-red-300" />
-              <div class="absolute top-1 left-5 h-2 w-2 rounded-full bg-amber-300" />
-              <div class="absolute top-1 left-8 h-2 w-2 rounded-full bg-green-300" />
+              <EvervaultCard>
+                <div class="absolute top-4 left-0 border-t-2 border-slate-500 w-full" />
+                <div class="absolute top-1 left-2 h-2 w-2 rounded-full bg-red-300" />
+                <div class="absolute top-1 left-5 h-2 w-2 rounded-full bg-amber-300" />
+                <div class="absolute top-1 left-8 h-2 w-2 rounded-full bg-green-300" />
 
-              <div class="grayscale">
-                {/*@ts-ignore*/}
-                <lottie-player
-                  autoplay
-                  loop
-                  mode="bounce"
-                  src={CodingIcon}
-                  class="h-24 p-4 w-24 mx-auto"
-                />
-              </div>
-              <h2 class="m-0 pb-4 font-serif">
-                Full stack software engineer and AI researcher with a passion
-                for creating beautiful user experiences.
-              </h2>
-              <p class="text-[#3a4f9a]">
-                My expertise lies in modern web development and infrastructure,
-                with a focus on Next.JS, React, TypeScript, AWS, MongoDB and
-                Postgres, and Deno/NodeJS.
-              </p>
-              <p class="text-end m-0 text-[#3a4f9a]">
-                <small>(made using SolidJS + Vite + Tailwind)</small>
-              </p>
+                <div class="grayscale">
+                  {/*@ts-ignore*/}
+                  <lottie-player
+                    autoplay
+                    loop
+                    mode="bounce"
+                    src={CodingIcon}
+                    class="h-24 p-4 w-24 mx-auto"
+                  />
+                </div>
+                <h2 class="m-0 pb-4 font-serif mix-blend-multiply">
+                  Full stack software engineer and AI researcher with a passion
+                  for creating beautiful user experiences.
+                </h2>
+                <p class="text-blue-800 mix-blend-multiply">
+                  My expertise lies in modern web development and
+                  infrastructure, with a focus on Next.JS, React, TypeScript,
+                  AWS, MongoDB and Postgres, and Deno/NodeJS.
+                </p>
+                <p class="text-end m-0 text-blue-800 mix-blend-multiply">
+                  <small>(made using SolidJS + Vite + Tailwind)</small>
+                </p>
+              </EvervaultCard>
             </section>
           </div>
 
@@ -312,8 +314,8 @@ const App = () => {
           </section>
         </main>
       </div>
-      <footer class="print:bg-transparent text-white print:relative sticky top-0  border-slate-400 py-4 w-full ">
-        <div class="grid grid-flow-row sm:grid-flow-col place-items-center gap-2 sm:gap-4 prose prose-sm text-xs m-auto w-full">
+      <footer class="print:bg-transparent text-white print:relative sticky top-0  border-slate-400 p-4 w-full ">
+        <div class="grid grid-flow-row sm:grid-flow-col sm:place-items-center place-content-end text-end sm:text-start gap-2 sm:gap-4 prose prose-sm text-xs m-auto w-full">
           <ContactDetails />
         </div>
       </footer>
@@ -360,6 +362,13 @@ function ContactDetails() {
         <br />
         <strong>
           <LinkedInLink />
+        </strong>
+      </div>
+      <div>
+        <small>Website</small>
+        <br />
+        <strong>
+          <a href="https://dmisdm.github.io">dmisdm.github.io</a>
         </strong>
       </div>
     </>
