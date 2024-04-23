@@ -23,7 +23,7 @@ const ExperienceCard = (props: {
 }) => (
   <div class={`py-8 ${props.class} break-inside-avoid`}>
     <div class="flex">
-      <div class="md:basis-20 p-2 flex justify-center items-start relative">
+      <div class="lg:basis-20 p-2 flex justify-center items-start relative">
         {props.imgSrc ? (
           <img src={props.imgSrc} class="h-8 w-8 -mt-2 m-0" />
         ) : (
@@ -52,14 +52,14 @@ const App = () => {
       <FancyBackground />
 
       <div class="flex flex-col min-h-screen print:text-[12px]">
-        <header class="grid place-items-center w-full print:hidden md:border-b-2 py-4 md:border-slate-300 md:sticky md:top-0 md:bg-white z-10">
-          <div class="prose prose-sm hidden md:grid grid-flow-row md:grid-flow-col gap-4 text-xs w-full place-items-end text-end md:text-start md:place-items-center px-2 md:px-0">
+        <header class="grid place-items-center w-full print:hidden lg:border-b-2 py-4 lg:border-slate-300 lg:sticky lg:top-0 lg:bg-white z-10">
+          <div class="prose prose-sm hidden lg:grid grid-flow-row lg:grid-flow-col gap-4 text-xs w-full place-items-end text-end lg:text-start lg:place-items-center px-2 lg:px-0">
             <ContactDetails />
           </div>
         </header>
-        <main class="flex-1 print:pt-0 md:pt-[20vh] pt-4 max-w-2xl print:max-w-4xl mx-auto px-4 pb-4 ">
-          <div class="grid sm:grid-cols-3 place-items-center sm:place-items-stretch gap-4 ">
-            <div class="grid md:place-content-center print:place-content-start place-content-start gap-4 py-2  rounded-lg print:col-span-2 col-span-2 md:col-span-full">
+        <main class="flex-1 print:pt-4 lg:pt-[20vh] pt-4 max-w-2xl print:max-w-4xl mx-auto px-4 pb-4 ">
+          <div class="grid sm:grid-cols-3 place-items-center sm:place-items-stretch gap-4">
+            <div class="grid lg:place-content-center print:place-content-start place-content-start gap-4 py-2  rounded-lg print:col-span-2 col-span-2 lg:col-span-full">
               <img
                 src={ProfileImg}
                 alt="A profile picture of Daniel Manning"
@@ -72,7 +72,7 @@ const App = () => {
                 </p>
               </div>
             </div>
-            <div class="col-span-1 grid items-end md:hidden rounded-lg prose prose-sm p-2 print:grid print:place-content-end">
+            <div class="col-span-1 grid items-end lg:hidden rounded-lg prose prose-sm p-2 print:grid print:place-content-end">
               <ContactDetails />
             </div>
 
