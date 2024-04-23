@@ -314,9 +314,12 @@ const App = () => {
           </section>
         </main>
       </div>
-      <footer class="print:bg-transparent text-white print:relative sticky top-0  border-slate-400 p-4 w-full ">
-        <div class="grid grid-flow-row sm:grid-flow-col sm:place-items-center place-content-end text-end sm:text-start gap-2 sm:gap-4 prose prose-sm text-xs m-auto w-full">
+      <footer class="print:bg-transparent  print:relative sticky top-0 border-t-2 border-slate-400 print:border-none p-4 w-full grid gap-4">
+        <div class="grid grid-flow-row sm:grid-flow-col sm:place-items-center place-content-center text-end sm:text-start gap-2 sm:gap-4 prose prose-sm text-xs m-auto w-full">
           <ContactDetails />
+        </div>
+        <div class="prose prose-sm place-self-center print:hidden">
+          <small>Made with ❤️ by Daniel Manning</small>
         </div>
       </footer>
     </>
