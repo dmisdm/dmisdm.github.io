@@ -49,7 +49,7 @@ export function CardPattern({
     `mask-image: radial-gradient(250px at ${mouseX()}px ${mouseY()}px, white, transparent); -webkit-mask-image radial-gradient(250px at ${mouseX()}px ${mouseY()}px, white, transparent)`;
 
   return (
-    <div class="pointer-events-none">
+    <div class="pointer-events-none opacity-60">
       <div class="absolute inset-0 rounded-md  [mask-image:linear-gradient(white,transparent)] group-hover/card:opacity-50"></div>
       <div
         class="absolute inset-0 rounded-md bg-gradient-to-r from-amber-500 to-pink-700 opacity-0  group-hover/card:opacity-50 backdrop-blur-xl transition duration-500"

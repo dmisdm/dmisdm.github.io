@@ -7,10 +7,7 @@ import CultureAmpIcon from "../assets/cultureampicon.svg";
 import ReadCloudIcon from "../assets/readcloud.svg";
 import RMITIcon from "../assets/rmit.png";
 import { EvervaultCard } from "./EvervaultCard";
-
-const Card = (props: { children: JSX.Element; class?: string }) => (
-  <div class={"rounded-lg p-6 " + (props.class ?? "")}>{props.children}</div>
-);
+import { cn } from "./cn";
 
 const Padding = (props: { size?: number }) => (
   <div style={{ padding: `${(props.size ?? 1) / 2}rem` }} />
@@ -38,6 +35,19 @@ const ExperienceCard = (props: {
   </div>
 );
 
+function InlinePill(props: { class?: string; children: JSX.Element }) {
+  return (
+    <span
+      class={cn(
+        "rounded-full bg-slate-400 text-white p-1 px-2 text-xs",
+        props.class
+      )}
+    >
+      {props.children}
+    </span>
+  );
+}
+
 function FancyBackground() {
   return (
     <>
@@ -45,6 +55,10 @@ function FancyBackground() {
     </>
   );
 }
+
+const CustomTitle = (props: { children: JSX.Element }) => (
+  <h2 class="">{props.children}</h2>
+);
 
 const App = () => {
   return (
@@ -76,33 +90,33 @@ const App = () => {
               <ContactDetails />
             </div>
 
-            <section class="col-span-full relative rounded-lg p-6 text-center border-2 border-slate-500 prose prose-sm mx-auto max-w-full">
+            <section class="col-span-full relative rounded-lg p-6 text-center border-2 shadow-2xl prose prose-sm mx-auto max-w-full bg-slate-800 prose-invert print-color-adjust">
               <EvervaultCard>
                 <div class="absolute top-4 left-0 border-t-2 border-slate-500 w-full" />
                 <div class="absolute top-1 left-2 h-2 w-2 rounded-full bg-red-300" />
                 <div class="absolute top-1 left-5 h-2 w-2 rounded-full bg-amber-300" />
                 <div class="absolute top-1 left-8 h-2 w-2 rounded-full bg-green-300" />
 
-                <div class="grayscale">
+                <div class="brightness-200">
                   {/*@ts-ignore*/}
                   <lottie-player
                     autoplay
                     loop
                     mode="bounce"
                     src={CodingIcon}
-                    class="h-24 p-4 w-24 mx-auto"
+                    class="h-24 p-4 w-24 mx-auto "
                   />
                 </div>
-                <h2 class="m-0 pb-4 font-serif mix-blend-multiply">
+                <h2 class="m-0 pb-4 font-serif ">
                   Full stack software engineer and AI researcher with a passion
                   for creating beautiful user experiences.
                 </h2>
-                <p class="text-blue-800 mix-blend-multiply">
+                <p class=" ">
                   My expertise lies in modern web development and
                   infrastructure, with a focus on Next.JS, React, TypeScript,
                   AWS, MongoDB and Postgres, and Deno/NodeJS.
                 </p>
-                <p class="text-end m-0 text-blue-800 mix-blend-multiply">
+                <p class="text-end m-0 ">
                   <small>(made using SolidJS + Vite + Tailwind)</small>
                 </p>
               </EvervaultCard>
@@ -113,22 +127,37 @@ const App = () => {
           <section class="flex flex-col gap-4">
             <h2 class="text-center text-2xl mb-0 font-serif">Experience</h2>
             <ExperienceCard imgSrc={ReadCloudIcon}>
-              <h3 class="m-0 pb-4">
+              <h3 class="m-0 ">
                 <a href="https://readcloud.com">ReadCloud</a> (since Mar 2023)
                 <br />
                 <small>Lead Software Engineer</small>
               </h3>
 
+              <div class="pt-2 pb-6  inline-flex gap-2 flex-wrap">
+                <InlinePill class="bg-sky-500">React</InlinePill>
+                <InlinePill class="bg-blue-500">TypeScript</InlinePill>
+                <InlinePill class="bg-cyan-400">Tailwind</InlinePill>
+                <InlinePill class="bg-green-500">NodeJS</InlinePill>
+                <InlinePill class="bg-slate-700">Deno</InlinePill>
+                <InlinePill class="bg-yellow-500">AWS</InlinePill>
+                <InlinePill class="bg-sky-600">PostgreSQL</InlinePill>
+                <InlinePill class="bg-green-400">MongoDB</InlinePill>
+                <InlinePill class="bg-sky-500">PHP</InlinePill>
+                <InlinePill class="bg-red-500">Java</InlinePill>
+                <InlinePill class="bg-fuchsia-500">Kotlin</InlinePill>
+              </div>
+
               <p class="m-0">
-                An introduction into leading a small team of engineers, which
-                involved planning, management and mentoring, hiring, and product
-                development.
-                <br /> In this role, I lead the development/integration of:
+                Leading a small team of engineers, involving: planning,
+                management, mentoring, hiring, design, product development.
+                <br /> I've led and significantly contributed to projects such
+                as:
               </p>
               <ul>
                 <li>
-                  Technologies like Next.JS, AWS CDK + SST, and Supabase, for
-                  solving a diverse range of problems in a scalable manner
+                  A full stack LMS plugin served to ~10k active users, written
+                  with: React, TypeScript, shadcn/ui + Tailwind, Deno Deploy,
+                  Supabase (postgres), and PHP for a Moodle integration.
                 </li>
                 <li>A component library based on shadcn/ui</li>
                 <li>
@@ -136,42 +165,60 @@ const App = () => {
                   existing infrastruction to CDK + SST
                 </li>
                 <li>
-                  Observability infrastructure such as CloudWatch, Sentry, and
-                  PostHog
+                  Introducing observability infrastructure like CloudWatch,
+                  Sentry, and analytics using PostHog
                 </li>
                 <li>
-                  Maintaining and partially migrating legacy PHP and Python
-                  applications
+                  Maintaining and migrating legacy PHP and Python
+                  APIs/applications
                 </li>
+                <li>Maintaining a Java + Kotlin (Spring) API</li>
               </ul>
             </ExperienceCard>
             <ExperienceCard imgSrc={CultureAmpIcon}>
-              <h3 class="m-0 pb-4">
+              <h3 class="m-0 ">
                 <a href="https://cultureamp.com">CultureAmp</a> (Nov 2019 - Mar
                 2023)
                 <br />
                 <small>Snr. Software Engineer</small>
               </h3>
+              <div class="pt-2 pb-6  inline-flex gap-2 flex-wrap">
+                <InlinePill class="bg-sky-500">React</InlinePill>
+                <InlinePill class="bg-blue-500">TypeScript</InlinePill>
+                <InlinePill class="bg-green-500">NodeJS</InlinePill>
+                <InlinePill class="bg-yellow-500">AWS</InlinePill>
+                <InlinePill class="bg-fuchsia-500">Kotlin</InlinePill>
+                <InlinePill class="bg-sky-400">Elm</InlinePill>
+              </div>
 
               <p class="m-0">
                 Full stack development using React, TypeScript, NodeJS, Kotlin,
                 Elm, and historically Flow and Ruby. Innovated and maintained
                 in-house design system and component library (
                 <a href="https://cultureamp.design">Kaizen Design System</a>
-                ). Gained SRE experience using AWS, and exposure to event
-                sourcing/CQRS. Worked mostly in the team responsible for
-                maintaining the health of frontend tooling and development
+                ). Gained SRE experience using AWS + CDK. Worked in projects
+                using event sourcing/CQRS. Worked mostly in the team responsible
+                for maintaining the health of frontend tooling and development
                 throughout the company, for example deplying and maintaining
-                Renovate bot
+                Renovate bot (for dependency updates).
               </p>
             </ExperienceCard>
             <ExperienceCard imgSrc={ReadCloudIcon}>
-              <h3 class="m-0 pb-4">
+              <h3 class="m-0 ">
                 <a href="https://readcloud.com/">ReadCloud</a> (Oct 2017 - Nov
                 2019)
                 <br />
                 <small>Software Engineer</small>
               </h3>
+              <div class="pt-2 pb-6  inline-flex gap-2 flex-wrap">
+                <InlinePill class="bg-sky-500">React</InlinePill>
+                <InlinePill class="bg-blue-500">TypeScript</InlinePill>
+                <InlinePill class="bg-green-500">NodeJS</InlinePill>
+                <InlinePill class="bg-green-400">MongoDB</InlinePill>
+                <InlinePill class="bg-yellow-500">AWS</InlinePill>
+                <InlinePill class="bg-red-500">Java</InlinePill>
+                <InlinePill class="bg-fuchsia-500">Kotlin</InlinePill>
+              </div>
               <p class="m-0">
                 Full stack engineer at an EduTech company. This involved getting
                 my hands dirty with a large number of technologies, mostly
@@ -183,12 +230,22 @@ const App = () => {
               </p>
             </ExperienceCard>
             <ExperienceCard imgSrc={AirwallexIcon}>
-              <h3 class="m-0 pb-4">
+              <h3 class="m-0">
                 <a href="https://www.airwallex.com/">Airwallex</a> (Nov 2016 -
                 Oct 2017)
                 <br />
                 <small>Junior-Mid Software Engineer</small>
               </h3>
+
+              <div class="pt-2 pb-6  inline-flex gap-2 flex-wrap">
+                <InlinePill class="bg-sky-500">React</InlinePill>
+                <InlinePill class="bg-blue-500">TypeScript</InlinePill>
+                <InlinePill class="bg-amber-300 text-black">Flow</InlinePill>
+                <InlinePill class="bg-sky-400">Docker</InlinePill>
+                <InlinePill class="bg-red-500">Java</InlinePill>
+                <InlinePill class="bg-fuchsia-500">Kotlin</InlinePill>
+                <InlinePill class="bg-rose-500">CassandraDB</InlinePill>
+              </div>
               <p class="m-0">
                 Mostly frontend engineer with exposure to Kotlin, Java + Spring,
                 React, Typescript + Flow. Additionally, I gained experience with
@@ -199,12 +256,18 @@ const App = () => {
             </ExperienceCard>
 
             <ExperienceCard imgSrc={ReadCloudIcon}>
-              <h3 class="m-0 pb-4">
+              <h3 class="m-0">
                 <a href="https://readcloud.com/">ReadCloud</a> (Feb 2015 - Nov
                 2016)
                 <br />
                 <small>Intern and Junior Software Engineer</small>
               </h3>
+              <div class="pt-2 pb-6  inline-flex gap-2 flex-wrap">
+                <InlinePill class="bg-yellow-500">JavaScript</InlinePill>
+                <InlinePill class="bg-green-500">NodeJS</InlinePill>
+                <InlinePill class="bg-green-400">MongoDB</InlinePill>
+                <InlinePill class="bg-red-400">AngularJS</InlinePill>
+              </div>
               <p class="m-0">
                 Similar to the position above at ReadCloud but on a smaller
                 scale with Angular, NodeJS, Java and MongoDB.
@@ -218,16 +281,16 @@ const App = () => {
               <h3 class="m-0 pb-4">
                 Doctor of Philosophy (PhD. Computer Science)
                 <br />
-                <small>since Mar 2022 - deferred</small>
+                <small>since Mar 2022 (part-time)</small>
                 <br />
                 <small>RMIT</small>
               </h3>
               <p class="m-0">
-                Eight months of academic research into the intersection between
+                In 2022, I began academic research into the intersection between
                 deep reinforcement learning (e.g. PPO) and large pretrained
                 language models (e.g. GPT, BERT), to understand how we can
                 improve overall reasoining capabilities in sequential decision
-                making. I intensively studied how these language models perform
+                making. I intensively study how these language models perform
                 and can be used to play text-based games like{" "}
                 <a href="https://www.pcjs.org/software/pcx86/game/infocom/zork1/">
                   Zork
