@@ -1,5 +1,5 @@
 import "@lottiefiles/lottie-player";
-import { type JSX } from "solid-js";
+import type { JSX } from "solid-js";
 import ProfileImg from "../assets/Profile.jpg";
 import AirwallexIcon from "../assets/airwallex.svg";
 import CodingIcon from "../assets/code.json?url";
@@ -22,9 +22,9 @@ const ExperienceCard = (props: {
     <div class="flex">
       <div class="lg:basis-20 p-2 flex justify-center items-start relative">
         {props.imgSrc ? (
-          <img src={props.imgSrc} class="h-8 w-8 -mt-2 m-0" />
+          <img src={props.imgSrc} alt="Logo" class="h-8 w-8 -mt-2 m-0" />
         ) : (
-          <div class="bg-gray-500 rounded-full h-4 w-4"></div>
+          <div class="bg-gray-500 rounded-full h-4 w-4" />
         )}
         <div class="h-[calc(100%-2.5rem)] w-[1px] bg-gray-200 absolute left-0 right-0 top-10 mx-auto" />
       </div>
@@ -76,7 +76,7 @@ const App = () => {
             <div class="grid lg:place-content-center print:place-content-start place-content-start gap-4 py-2  rounded-lg print:col-span-2 col-span-2 lg:col-span-full">
               <img
                 src={ProfileImg}
-                alt="A profile picture of Daniel Manning"
+                alt="Daniel Manning"
                 class="rounded-full h-40 place-self-center "
               />
               <div class="px-8 relative prose prose-sm">
@@ -108,8 +108,8 @@ const App = () => {
                   />
                 </div>
                 <h2 class="m-0 pb-4 font-serif ">
-                  Full stack software engineer with a passion
-                  for creating beautiful user experiences.
+                  Full stack software engineer with a passion for creating
+                  beautiful user experiences
                 </h2>
                 <p class=" ">
                   My expertise lies in modern web development and
@@ -255,31 +255,7 @@ const App = () => {
           <hr class="border-gray-300 py-4" />
           <section>
             <h2 class="text-center mb-0 font-serif text-2xl">Education</h2>
-            <ExperienceCard imgSrc={RMITIcon}>
-              <h3 class="m-0 pb-4">
-                Doctor of Philosophy (PhD. Computer Science)
-                <br />
-                <small></small>
-                <br />
-                <small>RMIT</small>
-              </h3>
-              <p class="m-0">
-                In 2022, I began academic research into the intersection between
-                deep reinforcement learning (e.g. PPO) and large pretrained
-                language models (e.g. GPT, BERT), to understand how we can
-                improve overall reasoining capabilities in sequential decision
-                making. I intensively study how these language models perform
-                and can be used to play text-based games like{" "}
-                <a href="https://www.pcjs.org/software/pcx86/game/infocom/zork1/">
-                  Zork
-                </a>
-                , and, at the time, found unanswered research questions relating
-                to their inability to determine which actions they can make, and
-                what their long term effects are. My passion lies here: to give
-                language models the ability to think <em>slowly</em> rather than
-                quickly.
-              </p>
-            </ExperienceCard>
+
             <ExperienceCard imgSrc={RMITIcon}>
               <h3 class="m-0 pb-4">
                 Bachelor of Science (Computer Science) Honours 1st Class
@@ -322,12 +298,12 @@ const App = () => {
               </div>
               <br />
               <p>
-                Later in 2022, I began a PhD into the intersection between
-                deep reinforcement learning (e.g. PPO) and large pretrained
-                language models (e.g. GPT, BERT), to understand how we can
-                improve overall reasoining capabilities in sequential decision
-                making. I intensively study how these language models perform
-                and can be used to play text-based games like{" "}
+                Later in 2022, I began a PhD into the intersection between deep
+                reinforcement learning (e.g. PPO) and large pretrained language
+                models (e.g. GPT, BERT), to understand how we can improve
+                overall reasoining capabilities in sequential decision making. I
+                intensively study how these language models perform and can be
+                used to play text-based games like{" "}
                 <a href="https://www.pcjs.org/software/pcx86/game/infocom/zork1/">
                   Zork
                 </a>
@@ -336,11 +312,12 @@ const App = () => {
                 what their long term effects are. My passion lies here: to give
                 language models the ability to think <em>slowly</em> rather than
                 quickly.
-                <br/>
-                After about a year of research, it became clear that academia isn't all that it seems.
-                Personal circumstances and life goals shift, and my language and reasoning 
-                ideas felt irrelevant under the shadow of the LLM boom.
-                If I undertake this again, overseas (probably EU) academic models seem like the way to go!
+                <br />
+                After about a year of research, it became clear that academia
+                isn't all that it seems. Personal circumstances and life goals
+                shift, and my language and reasoning ideas felt irrelevant under
+                the shadow of the LLM boom. If I undertake this again, overseas
+                (probably EU) academic models seem like the way to go!
               </p>
             </ExperienceCard>
             <ExperienceCard imgSrc={RMITIcon}>
@@ -355,10 +332,10 @@ const App = () => {
                 Array of subjects (see transcript for list) such as low level
                 assembly programming, advanced mathematics for computing, AI,
                 object oriented software design, web dev, and an industry
-                project + internship at ReadCloud in 2015. This degree along with it's real-world
-                experience led to my career in software engineering, with a focus
-                on web development and the ecosystem surrounding it
-                (backend, frontend, infrastructure/AWS etc).
+                project + internship at ReadCloud in 2015. This degree along
+                with it's real-world experience led to my career in software
+                engineering, with a focus on web development and the ecosystem
+                surrounding it (backend, frontend, infrastructure/AWS etc).
               </p>
               <p class="flex justify-between max-w-xs">
                 <a href="https://www.myequals.net/sharelink/99cc95c7-f9af-42b6-9f4c-98fb89ed72d7/fe59eb01-3da5-4959-8f9c-b50d40ec44db">
@@ -381,7 +358,9 @@ const App = () => {
           <ContactDetails />
         </div>
         <div class="prose prose-sm place-self-center print:hidden">
-          <small>Made with ❤️ by Daniel Manning, using SolidJS + Vite + Tailwind</small>
+          <small>
+            Made with ❤️ by Daniel Manning, using SolidJS + Vite + Tailwind
+          </small>
         </div>
       </footer>
     </>
