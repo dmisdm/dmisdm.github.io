@@ -108,7 +108,7 @@ const App = () => {
                   />
                 </div>
                 <h2 class="m-0 pb-4 font-serif ">
-                  Full stack software engineer and AI researcher with a passion
+                  Full stack software engineer with a passion
                   for creating beautiful user experiences.
                 </h2>
                 <p class=" ">
