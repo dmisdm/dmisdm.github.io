@@ -252,6 +252,7 @@ const App = () => {
               </p>
             </ExperienceCard>
           </section>
+          <div style={{ "page-break-after": "always", clear: "both" }} />
           <hr class="border-gray-300 py-4" />
           <section>
             <h2 class="text-center mb-0 font-serif text-2xl">Education</h2>
