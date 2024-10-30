@@ -254,25 +254,6 @@ const App = () => {
                 and Swarm, and some Kubernetes).
               </p>
             </ExperienceCard>
-
-            <ExperienceCard imgSrc={ReadCloudIcon}>
-              <h3 class="m-0">
-                <a href="https://readcloud.com/">ReadCloud</a> (Feb 2015 - Nov
-                2016)
-                <br />
-                <small>Intern and Junior Software Engineer</small>
-              </h3>
-              <div class="pt-2 pb-6  inline-flex gap-2 flex-wrap">
-                <InlinePill class="bg-yellow-500">JavaScript</InlinePill>
-                <InlinePill class="bg-green-500">NodeJS</InlinePill>
-                <InlinePill class="bg-green-400">MongoDB</InlinePill>
-                <InlinePill class="bg-red-400">AngularJS</InlinePill>
-              </div>
-              <p class="m-0">
-                Similar to the position above at ReadCloud but on a smaller
-                scale with Angular, NodeJS, Java and MongoDB.
-              </p>
-            </ExperienceCard>
           </section>
           <hr class="border-gray-300 py-4" />
           <section>
@@ -377,10 +358,10 @@ const App = () => {
                 Array of subjects (see transcript for list) such as low level
                 assembly programming, advanced mathematics for computing, AI,
                 object oriented software design, web dev, and an industry
-                project at ReadCloud. This degree along with it's internship
-                experience led to my career in software engineering with a focus
-                on web service development and the ecosystem surrounding it
-                (backend, frontend, infrastructure/AWS etc)
+                project + internship at ReadCloud in 2015. This degree along with it's real-world
+                experience led to my career in software engineering, with a focus
+                on web development and the ecosystem surrounding it
+                (backend, frontend, infrastructure/AWS etc).
               </p>
               <p class="flex justify-between max-w-xs">
                 <a href="https://www.myequals.net/sharelink/99cc95c7-f9af-42b6-9f4c-98fb89ed72d7/fe59eb01-3da5-4959-8f9c-b50d40ec44db">
