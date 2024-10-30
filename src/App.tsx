@@ -116,9 +116,6 @@ const App = () => {
                   infrastructure, with a focus on Next.JS, React, TypeScript,
                   AWS, MongoDB and Postgres, and Deno/NodeJS.
                 </p>
-                <p class="text-end m-0 ">
-                  <small>(made using SolidJS + Vite + Tailwind)</small>
-                </p>
               </EvervaultCard>
             </section>
           </div>
@@ -384,7 +381,7 @@ const App = () => {
           <ContactDetails />
         </div>
         <div class="prose prose-sm place-self-center print:hidden">
-          <small>Made with ❤️ by Daniel Manning</small>
+          <small>Made with ❤️ by Daniel Manning, using SolidJS + Vite + Tailwind</small>
         </div>
       </footer>
     </>
