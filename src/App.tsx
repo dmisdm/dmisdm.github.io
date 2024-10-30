@@ -82,7 +82,7 @@ const App = () => {
               <div class="px-8 relative prose prose-sm">
                 <h2 class="m-0">Daniel Manning</h2>
                 <p class="m-0 text-center">
-                  Software Engineer <br /> AI Researcher
+                  Software Engineer, Aspiring Designer
                 </p>
               </div>
             </div>
@@ -281,7 +281,7 @@ const App = () => {
               <h3 class="m-0 pb-4">
                 Doctor of Philosophy (PhD. Computer Science)
                 <br />
-                <small>since Mar 2022 (part-time)</small>
+                <small></small>
                 <br />
                 <small>RMIT</small>
               </h3>
@@ -343,6 +343,27 @@ const App = () => {
                 <p class="text-end m-0">GPA: 4.0</p>
               </div>
               <br />
+              <p>
+                Later in 2022, I began a PhD into the intersection between
+                deep reinforcement learning (e.g. PPO) and large pretrained
+                language models (e.g. GPT, BERT), to understand how we can
+                improve overall reasoining capabilities in sequential decision
+                making. I intensively study how these language models perform
+                and can be used to play text-based games like{" "}
+                <a href="https://www.pcjs.org/software/pcx86/game/infocom/zork1/">
+                  Zork
+                </a>
+                , and, at the time, found unanswered research questions relating
+                to their inability to determine which actions they can make, and
+                what their long term effects are. My passion lies here: to give
+                language models the ability to think <em>slowly</em> rather than
+                quickly.
+                <br/>
+                After about a year of research, it became clear that academia isn't all that it seems.
+                Personal circumstances and life goals shift, and my language and reasoning 
+                ideas felt irrelevant under the shadow of the LLM boom.
+                If I undertake this again, overseas (probably EU) academic models seem like the way to go!
+              </p>
             </ExperienceCard>
             <ExperienceCard imgSrc={RMITIcon}>
               <h3 class="m-0 pb-4">
