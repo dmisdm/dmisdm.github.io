@@ -82,7 +82,7 @@ const App = () => {
               <div class="px-8 relative prose prose-sm">
                 <h2 class="m-0">Daniel Manning</h2>
                 <p class="m-0 text-center">
-                  Software Engineer, Aspiring Designer
+                  Software Engineer, <br /> Aspiring Designer
                 </p>
               </div>
             </div>
