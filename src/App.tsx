@@ -5,6 +5,7 @@ import AirwallexIcon from "../assets/airwallex.svg";
 import CodingIcon from "../assets/code.json?url";
 import CultureAmpIcon from "../assets/cultureampicon.svg";
 import ReadCloudIcon from "../assets/readcloud.svg";
+import Primary from "../assets/primary.svg";
 import RMITIcon from "../assets/rmit.png";
 import { EvervaultCard } from "./EvervaultCard";
 import { cn } from "./cn";
@@ -77,12 +78,12 @@ const App = () => {
               <img
                 src={ProfileImg}
                 alt="Daniel Manning"
-                class="rounded-full h-40 place-self-center "
+                class="rounded-full h-40 place-self-center shadow-md"
               />
               <div class="px-8 relative prose prose-sm">
                 <h2 class="m-0">Daniel Manning</h2>
                 <p class="m-0 text-center">
-                  Software Engineer, <br /> Aspiring Designer
+                  Software Engineer <br /> Aspiring Designer
                 </p>
               </div>
             </div>
@@ -123,9 +124,37 @@ const App = () => {
           <Padding size={4} />
           <section class="flex flex-col gap-4">
             <h2 class="text-center text-2xl mb-0 font-serif">Experience</h2>
+            <ExperienceCard imgSrc={Primary}>
+              <h3 class="m-0 ">
+                <a href="https://primary.tech">Primary</a> (since Mar 2023)
+                <br />
+                <small>Senior Software Engineer</small>
+              </h3>
+
+              <div class="pt-2 pb-6  inline-flex gap-2 flex-wrap">
+                <InlinePill class="bg-neutral-700">Remix</InlinePill>
+                <InlinePill class="bg-sky-500">React</InlinePill>
+                <InlinePill class="bg-blue-500">TypeScript</InlinePill>
+                <InlinePill class="bg-cyan-400">Tailwind</InlinePill>
+                <InlinePill class="bg-green-500">NodeJS</InlinePill>
+                <InlinePill class="bg-sky-600">PostgreSQL</InlinePill>
+                <InlinePill class="bg-indigo-500">Prisma</InlinePill>
+              </div>
+
+              <p class="m-0">
+                A fast-paced Sydney-based fintech startup tackling treasury
+                management. Specializing in frontend product development with
+                React+TypeScript in Remix, I worked closely with designers to
+                bring polished, user-centered experiences to life. Known for
+                bridging gaps, proposing innovative solutions, and executing
+                with a ‘get-it-done’ mindset to deliver impactful features
+                across the full stack.
+              </p>
+            </ExperienceCard>
             <ExperienceCard imgSrc={ReadCloudIcon}>
               <h3 class="m-0 ">
-                <a href="https://readcloud.com">ReadCloud</a> (since Mar 2023)
+                <a href="https://readcloud.com">ReadCloud</a> (Mar 2023 - Aug
+                2024)
                 <br />
                 <small>Lead Software Engineer</small>
               </h3>
