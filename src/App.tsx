@@ -126,7 +126,7 @@ const App = () => {
             <h2 class="text-center text-2xl mb-0 font-serif">Experience</h2>
             <ExperienceCard imgSrc={Primary}>
               <h3 class="m-0 ">
-                <a href="https://primary.tech">Primary</a> (since Mar 2023)
+                <a href="https://primary.tech">Primary</a> (since Aug 2024)
                 <br />
                 <small>Senior Software Engineer</small>
               </h3>
