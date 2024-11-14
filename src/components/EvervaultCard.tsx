@@ -24,7 +24,7 @@ export const EvervaultCard = (props: {
   return (
     <div
       onMouseMove={onMouseMove}
-      class={"group/card bg-transparent " + props.class ?? ""}
+      class={"group/card bg-transparent " + (props.class ?? "")}
     >
       <CardPattern
         mouseX={mouseX}
@@ -52,11 +52,11 @@ export function CardPattern({
     <div class="pointer-events-none opacity-60">
       <div class="absolute inset-0 rounded-md  [mask-image:linear-gradient(white,transparent)] group-hover/card:opacity-50"></div>
       <div
-        class="absolute inset-0 rounded-md bg-gradient-to-r from-amber-500 to-pink-700 opacity-0  group-hover/card:opacity-50 backdrop-blur-xl transition duration-500"
+        class="absolute inset-0 rounded-md bg-gradient-to-r from-amber-500 to-pink-700 opacity-0  group-hover/card:opacity-30 backdrop-blur-xl transition duration-500"
         style={style()}
       />
       <div
-        class="absolute inset-0 rounded-md opacity-0 mix-blend-overlay  group-hover/card:opacity-100"
+        class="absolute inset-0 rounded-md opacity-0 mix-blend-overlay  group-hover/card:opacity-30"
         style={style()}
       >
         <p class="absolute inset-x-0 text-xs h-full break-words whitespace-pre-wrap text-white font-mono font-bold transition duration-500">

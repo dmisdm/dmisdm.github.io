@@ -1,29 +1,29 @@
 {
-  "name": "vite-template-solid",
-  "version": "0.0.0",
-  "description": "",
+  "name": "example-with-tailwindcss",
+  "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "serve": "vite preview"
-  },
-  "license": "MIT",
-  "devDependencies": {
-    "autoprefixer": "^10.4.13",
-    "playwright": "^1.43.1",
-    "postcss": "^8.4.21",
-    "tailwindcss": "^3.2.4",
-    "typescript": "^4.9.5",
-    "vite": "^4.1.1",
-    "vite-plugin-pdf": "^0.1.0",
-    "vite-plugin-solid": "^2.5.0"
+    "dev": "vinxi dev",
+    "build": "vinxi build",
+    "start": "vinxi start"
   },
   "dependencies": {
-    "@lottiefiles/lottie-player": "^1.7.1",
-    "@tailwindcss/typography": "^0.5.9",
-    "clsx": "^2.1.0",
-    "solid-js": "^1.6.10",
-    "tailwind-merge": "^2.2.2"
+    "@lottiefiles/dotlottie-solid": "^0.0.21",
+    "@lottiefiles/lottie-player": "^2.0.12",
+    "@solidjs/router": "^0.15.0",
+    "@solidjs/start": "^1.0.10",
+    "autoprefixer": "^10.4.19",
+    "clsx": "^2.1.1",
+    "postcss": "^8.4.38",
+    "solid-js": "^1.9.2",
+    "tailwind-merge": "^2.5.4",
+    "tailwindcss": "^3.4.3",
+    "vinxi": "^0.4.3"
   },
-  "packageManager": "pnpm@9.12.2+sha512.22721b3a11f81661ae1ec68ce1a7b879425a1ca5b991c975b074ac220b187ce56c708fe5db69f4c962c989452eee76c82877f4ee80f474cebd61ee13461b6228"
+  "engines": {
+    "node": ">=18"
+  },
+  "devDependencies": {
+    "@tailwindcss/typography": "^0.5.15"
+  },
+  "packageManager": "pnpm@9.13.1+sha512.5ac37545851c55ec58521b6c285db6f848f93ca70889beb4145f5b40fe234e4ea4faee4dad12ac5c139e494374c65d9c3a6ec9a25954378fa286a250e68d2f20"
 }
