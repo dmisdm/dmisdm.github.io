@@ -104,14 +104,9 @@ const App = () => {
                 />
 
                 <h2 class="m-0 pb-4 font-serif ">
-                  Full stack software engineer with a passion for creating
-                  beautiful user experiences
+                  Senior Software Engineer with 10 years of experience in
+                  frontend and backend development.
                 </h2>
-                <p class=" ">
-                  My expertise lies in modern web development and
-                  infrastructure, with a focus on Next.JS, React, TypeScript,
-                  AWS, MongoDB and Postgres, and Deno/NodeJS.
-                </p>
               </EvervaultCard>
             </section>
           </div>
@@ -136,15 +131,22 @@ const App = () => {
                 <InlinePill class="bg-indigo-500">Prisma</InlinePill>
               </div>
 
-              <p class="m-0">
-                A fast-paced Sydney-based fintech startup tackling treasury
-                management. Specializing in frontend product development with
-                React+TypeScript in Remix, I work closely with designers to
-                bring polished, user-centered experiences to life. Known for
-                bridging gaps, proposing innovative solutions, and executing
-                with a ‘get-it-done’ mindset to deliver impactful features
-                across the full stack.
-              </p>
+              <ul>
+                <li>
+                  Spearheaded front-end development using React + TypeScript in
+                  Remix, collaborating with designers to build polished,
+                  user-centric interfaces.
+                </li>
+                <li>
+                  Delivered impactful features across the full stack by bridging
+                  technical gaps, proposing innovative solutions, and
+                  maintaining a “get-it-done” mindset.
+                </li>
+                <li>
+                  Enhanced application efficiency by optimizing Postgres-backed
+                  APIs using Prisma.
+                </li>
+              </ul>
             </ExperienceCard>
             <ExperienceCard imgSrc={ReadCloudIcon}>
               <h3 class="m-0 ">
@@ -168,32 +170,25 @@ const App = () => {
                 <InlinePill class="bg-fuchsia-500">Kotlin</InlinePill>
               </div>
 
-              <p class="m-0">
-                Leading a small team of engineers, involving: planning,
-                management, mentoring, hiring, design, product development.
-                <br /> I've led and significantly contributed to projects such
-                as:
-              </p>
               <ul>
                 <li>
-                  A full stack LMS plugin served to ~10k active users, written
-                  with: React, TypeScript, shadcn/ui + Tailwind, Deno Deploy,
-                  Supabase (postgres), and PHP for a Moodle integration.
+                  Led a small team of engineers through planning, mentoring, and
+                  hands-on development of core projects, including a full-stack
+                  LMS plugin used by ~10k active users.
                 </li>
-                <li>A component library based on shadcn/ui</li>
                 <li>
-                  AWS cost savings and optimizations, and the migration of
-                  existing infrastruction to CDK + SST
+                  Initiated AWS cost savings and optimizations, and the
+                  migration of existing infrastruction to CDK + SST
                 </li>
                 <li>
                   Introducing observability infrastructure like CloudWatch,
                   Sentry, and analytics using PostHog
                 </li>
                 <li>
-                  Maintaining and migrating legacy PHP and Python
+                  Maintained and migrated legacy PHP and Python
                   APIs/applications
                 </li>
-                <li>Maintaining a Java + Kotlin (Spring) API</li>
+                <li>Maintained a Java + Kotlin (Spring) API</li>
               </ul>
             </ExperienceCard>
             <ExperienceCard imgSrc={CultureAmpIcon}>
@@ -201,7 +196,7 @@ const App = () => {
                 <a href="https://cultureamp.com">CultureAmp</a> (Nov 2019 - Mar
                 2023)
                 <br />
-                <small>Snr. Software Engineer</small>
+                <small>Senior Software Engineer</small>
               </h3>
               <div class="pt-2 pb-6  inline-flex gap-2 flex-wrap">
                 <InlinePill class="bg-sky-500">React</InlinePill>
@@ -212,17 +207,25 @@ const App = () => {
                 <InlinePill class="bg-sky-400">Elm</InlinePill>
               </div>
 
-              <p class="m-0">
-                Full stack development using React, TypeScript, NodeJS, Kotlin,
-                Elm, and historically Flow and Ruby. Innovated and maintained
-                in-house design system and component library (
-                <a href="https://cultureamp.design">Kaizen Design System</a>
-                ). Gained SRE experience using AWS + CDK. Worked in projects
-                using event sourcing/CQRS. Worked mostly in the team responsible
-                for maintaining the health of frontend tooling and development
-                throughout the company, for example deplying and maintaining
-                Renovate bot (for dependency updates).
-              </p>
+              <ul>
+                <li>
+                  Contributed to full-stack development projects involving
+                  React, TypeScript, NodeJS, and Kotlin.
+                </li>
+                <li>
+                  Maintained the in-house design system (Kaizen Design System)
+                  and optimized development processes across teams by automating
+                  dependency updates using Renovate.
+                </li>
+                <li>
+                  Collaborated on SRE-focused projects involving AWS and CDK,
+                  enhancing system reliability and deployment efficiency.
+                </li>
+                <li>
+                  Worked on event-sourcing architectures and CQRS-based
+                  applications.
+                </li>
+              </ul>
             </ExperienceCard>
             <ExperienceCard imgSrc={ReadCloudIcon}>
               <h3 class="m-0 ">
@@ -240,15 +243,20 @@ const App = () => {
                 <InlinePill class="bg-red-500">Java</InlinePill>
                 <InlinePill class="bg-fuchsia-500">Kotlin</InlinePill>
               </div>
-              <p class="m-0">
-                Full stack engineer at an EduTech company. This involved getting
-                my hands dirty with a large number of technologies, mostly
-                React, Typescript, NodeJS, Java, and MongoDB. Being one of the
-                very few developers, I enjoyed the full experience of setting up
-                infrastructure on vanilla VMs with docker, later moving to AWS
-                and automating through Gitlab's CI, also taking on some design
-                of UIs.
-              </p>
+              <ul>
+                <li>
+                  Developed scalable features using React, TypeScript, NodeJS,
+                  and MongoDB.
+                </li>
+                <li>
+                  Migrated infrastructure from Docker-based deployments on
+                  vanilla VMs to AWS-backed automated CI/CD pipelines.
+                </li>
+                <li>
+                  Designed intuitive user interfaces in collaboration with
+                  designers, improving product adoption.
+                </li>
+              </ul>
             </ExperienceCard>
             <ExperienceCard imgSrc={AirwallexIcon}>
               <h3 class="m-0">
@@ -267,13 +275,20 @@ const App = () => {
                 <InlinePill class="bg-fuchsia-500">Kotlin</InlinePill>
                 <InlinePill class="bg-rose-500">CassandraDB</InlinePill>
               </div>
-              <p class="m-0">
-                Mostly frontend engineer with exposure to Kotlin, Java + Spring,
-                React, Typescript + Flow. Additionally, I gained experience with
-                distributed systems such as Cassandra DB, RabbitMQ, and is in
-                this job where I became more advanced with Docker (incl. Compose
-                and Swarm, and some Kubernetes).
-              </p>
+              <ul>
+                <li>
+                  Mostly frontend engineer with exposure to Kotlin, Java +
+                  Spring, React, Typescript + Flow.
+                </li>
+                <li>
+                  Gained experience with distributed systems such as Cassandra
+                  DB, RabbitMQ
+                </li>
+                <li>
+                  Became adept with Docker (incl. Compose and Swarm, and some
+                  Kubernetes)
+                </li>
+              </ul>
             </ExperienceCard>
           </section>
 
