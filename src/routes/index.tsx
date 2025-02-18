@@ -118,7 +118,7 @@ const App = () => {
               <h3 class="m-0 ">
                 <a href="https://primary.tech">Primary</a> (since Aug 2024)
                 <br />
-                <small>Senior Software Engineer</small>
+                <small>Senior/Lead Software Engineer</small>
               </h3>
 
               <div class="pt-2 pb-6  inline-flex gap-2 flex-wrap">
