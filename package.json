@@ -1,5 +1,5 @@
 {
-  "name": "example-with-tailwindcss",
+  "name": "dmisdm.github.io",
   "type": "module",
   "scripts": {
     "dev": "vinxi dev",
@@ -25,5 +25,5 @@
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.15"
   },
-  "packageManager": "pnpm@9.13.1+sha512.5ac37545851c55ec58521b6c285db6f848f93ca70889beb4145f5b40fe234e4ea4faee4dad12ac5c139e494374c65d9c3a6ec9a25954378fa286a250e68d2f20"
+  "packageManager": "pnpm@10.4.1+sha512.c753b6c3ad7afa13af388fa6d808035a008e30ea9993f58c6663e2bc5ff21679aa834db094987129aa4d488b86df57f7b634981b2f827cdcacc698cc0cfb88af"
 }
