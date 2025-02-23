@@ -143,8 +143,8 @@ const App = () => {
                   maintaining a “get-it-done” mindset.
                 </li>
                 <li>
-                  Enhanced application efficiency by optimizing Postgres-backed
-                  APIs using Prisma.
+                  Led meaning product-delivering projects through planning and
+                  collaboration with design.
                 </li>
               </ul>
             </ExperienceCard>
