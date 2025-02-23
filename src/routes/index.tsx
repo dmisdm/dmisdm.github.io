@@ -104,7 +104,7 @@ const App = () => {
                 />
 
                 <h2 class="m-0 pb-4 font-serif ">
-                  Senior Software Engineer with 10 years of experience in
+                  Full stack software engineer with 10 years of experience in
                   frontend and backend development.
                 </h2>
               </EvervaultCard>
@@ -178,17 +178,16 @@ const App = () => {
                 </li>
                 <li>
                   Initiated AWS cost savings and optimizations, and the
-                  migration of existing infrastruction to CDK + SST
+                  migration of existing infrastruction to CDK + SST.
                 </li>
                 <li>
                   Introducing observability infrastructure like CloudWatch,
-                  Sentry, and analytics using PostHog
+                  Sentry, and analytics using PostHog.
                 </li>
                 <li>
-                  Maintained and migrated legacy PHP and Python
-                  APIs/applications
+                  Maintained and/or migrated legacy PHP, Python, and Java +
+                  Kotlin systems.
                 </li>
-                <li>Maintained a Java + Kotlin (Spring) API</li>
               </ul>
             </ExperienceCard>
             <ExperienceCard imgSrc={CultureAmpIcon}>
