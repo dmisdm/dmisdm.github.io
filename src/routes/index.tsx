@@ -181,12 +181,18 @@ const App = () => {
                   migration of existing infrastruction to CDK + SST.
                 </li>
                 <li>
-                  Introducing observability infrastructure like CloudWatch,
+                  Introduced observability infrastructure like CloudWatch,
                   Sentry, and analytics using PostHog.
                 </li>
                 <li>
                   Maintained and/or migrated legacy PHP, Python, and Java +
                   Kotlin systems.
+                </li>
+                <li>
+                  Exposed to a wide variety of tools and frameworks, including:
+                  Tauri, React Native and Expo as native app solutions.
+                  Additionally, education management infrastructure such as
+                  Canvas, Moodle, SchoolBox, and VETtrak in particular.
                 </li>
               </ul>
             </ExperienceCard>
