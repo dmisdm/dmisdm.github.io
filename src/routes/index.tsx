@@ -189,7 +189,7 @@ const App = () => {
                   Kotlin systems.
                 </li>
                 <li>
-                  Exposed to a wide variety of tools and frameworks, including:
+                  Exposed to a wide variety of tools and frameworks, including
                   Tauri, React Native and Expo as native app solutions.
                   Additionally, education management infrastructure such as
                   Canvas, Moodle, SchoolBox, and VETtrak in particular.
