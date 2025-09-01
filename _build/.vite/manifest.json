@@ -1,0 +1,51 @@
+{
+  "_web-DRpiTjlP.js": {
+    "file": "assets/web-DRpiTjlP.js",
+    "name": "web"
+  },
+  "src/assets/Profile.jpg": {
+    "file": "assets/Profile-BXDLJoxj.jpg",
+    "src": "src/assets/Profile.jpg"
+  },
+  "src/assets/plantbroker.avif": {
+    "file": "assets/plantbroker-B-_i4_-b.avif",
+    "src": "src/assets/plantbroker.avif"
+  },
+  "src/routes/[...404].tsx?pick=default&pick=$css": {
+    "file": "assets/_...404_-CCb1vwe4.js",
+    "name": "_...404_",
+    "src": "src/routes/[...404].tsx?pick=default&pick=$css",
+    "isEntry": true,
+    "isDynamicEntry": true
+  },
+  "src/routes/index.tsx?pick=default&pick=$css": {
+    "file": "assets/index-DRV4CtpY.js",
+    "name": "index",
+    "src": "src/routes/index.tsx?pick=default&pick=$css",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_web-DRpiTjlP.js"
+    ],
+    "assets": [
+      "assets/Profile-BXDLJoxj.jpg",
+      "assets/plantbroker-B-_i4_-b.avif"
+    ]
+  },
+  "virtual:$vinxi/handler/client": {
+    "file": "assets/client-BW7hjM-S.js",
+    "name": "client",
+    "src": "virtual:$vinxi/handler/client",
+    "isEntry": true,
+    "imports": [
+      "_web-DRpiTjlP.js"
+    ],
+    "dynamicImports": [
+      "src/routes/[...404].tsx?pick=default&pick=$css",
+      "src/routes/index.tsx?pick=default&pick=$css"
+    ],
+    "css": [
+      "assets/client-D91RQzlN.css"
+    ]
+  }
+}

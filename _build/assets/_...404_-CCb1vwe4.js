@@ -1,0 +1,1 @@
+function o(r,t=302){let e,s;typeof t=="number"?e={status:t}:({revalidate:s,...e}=t,typeof e.status>"u"&&(e.status=302));const n=new Headers(e.headers);return n.set("Location",r),s!==void 0&&n.set("X-Revalidate",s.toString()),new Response(null,{...e,headers:n})}function d(){return o("/")}export{d as default};
