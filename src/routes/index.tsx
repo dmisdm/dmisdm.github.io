@@ -87,7 +87,7 @@ const App = () => {
                 <h2 class="m-0 font-serif not-prose text-2xl">
                   Daniel Manning
                 </h2>
-                <div class="flex gap-1">
+                <div class="flex gap-1 print:mt-2">
                   <p class="m-0 text-center">Software Engineer,</p>
                   <p class="m-0 text-center">Co-founder.</p>
                 </div>
