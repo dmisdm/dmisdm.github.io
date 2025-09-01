@@ -4,11 +4,11 @@ import { createHandler, StartServer } from "@solidjs/start/server";
 export default createHandler(() => (
   <StartServer
     document={({ assets, children, scripts }) => (
-      <html lang="en">
+      <html lang="en" class="bg-amber-50">
         <head>
           <meta charset="utf-8" />
           <meta name="viewport" content="width=device-width, initial-scale=1" />
-          <meta name="theme-color" content="#6ee7b7" />
+          <meta name="theme-color" content="#fffbeb" />
           <title>Daniel Manning - Software Engineer</title>
           <script
             innerHTML={`

@@ -9,10 +9,6 @@ module.exports = {
   darkMode: "class",
   theme: {
     extend: {
-      colors: {
-        primary: "#114558",
-        cardbg: "#FDE6CD",
-      },
       fontFamily: {
         sans: ["DM Sans", ...defaultTheme.fontFamily.sans],
         serif: ["DM Serif Display", ...defaultTheme.fontFamily.serif],

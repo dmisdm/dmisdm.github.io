@@ -26,6 +26,12 @@ importers:
       clsx:
         specifier: ^2.1.1
         version: 2.1.1
+      lucide-solid:
+        specifier: ^0.542.0
+        version: 0.542.0(solid-js@1.9.3)
+      ogl:
+        specifier: ^1.0.11
+        version: 1.0.11
       postcss:
         specifier: ^8.4.38
         version: 8.4.49
@@ -43,8 +49,8 @@ importers:
         version: 0.4.3(@types/node@22.9.0)(ioredis@5.4.1)(terser@5.36.0)(typescript@5.6.3)
     devDependencies:
       '@tailwindcss/typography':
-        specifier: ^0.5.15
-        version: 0.5.15(tailwindcss@3.4.15)
+        specifier: ^0.5.16
+        version: 0.5.16(tailwindcss@3.4.15)
 
 packages:
 
@@ -932,10 +938,10 @@ packages:
   '@solidjs/start@1.0.10':
     resolution: {integrity: sha512-3yg4KraSxc4rXs9dy/3kkqjDhU0JCPsZFLmDl5n6hHRPwtLLac6WUhs2k5VxGzitHaaJM/ZQCfT7i544Mf+4tw==}
 
-  '@tailwindcss/typography@0.5.15':
-    resolution: {integrity: sha512-AqhlCXl+8grUz8uqExv5OTtgpjuVIwFTSXTrh8y9/pw6q2ek7fJ+Y8ZEVw7EB2DCcuCOtEjf9w3+J3rzts01uA==}
+  '@tailwindcss/typography@0.5.16':
+    resolution: {integrity: sha512-0wDLwCVF5V3x3b1SGXPCDcdsbDHMBe+lkFzBRaHeLvNi+nrrnZ1lA18u+OTWO8iSWU2GxUOCvlXtDuqftc1oiA==}
     peerDependencies:
-      tailwindcss: '>=3.0.0 || insiders || >=4.0.0-alpha.20'
+      tailwindcss: '>=3.0.0 || insiders || >=4.0.0-alpha.20 || >=4.0.0-beta.1'
 
   '@types/babel__core@7.20.5':
     resolution: {integrity: sha512-qoQprZvz5wQFJwMDqeseRXWv3rqMvhgpbXFfVyWhbx9X47POIA6i/+dXefEmZKoAgOaTdaIgNSMqMIU61yRyzA==}
@@ -1886,6 +1892,11 @@ packages:
   lru-cache@5.1.1:
     resolution: {integrity: sha512-KpNARQA3Iwv+jTA0utUVVbrh+Jlrr1Fv0e56GGzAFOXN7dk/FviaDW8LHmK52DlcH4WP2n6gI8vN1aesBFgo9w==}
 
+  lucide-solid@0.542.0:
+    resolution: {integrity: sha512-cMy0fZu9TEEm1IIP3BIXBJd07xJGeAYNebIE1Zti+7cnv1hJcHoNZx4+D2tHZIYKILoSB/Rhs5M0vdKzQTU33g==}
+    peerDependencies:
+      solid-js: ^1.4.7
+
   magic-string@0.30.12:
     resolution: {integrity: sha512-Ea8I3sQMVXr8JhN4z+H/d8zwo+tYDgHE9+5G4Wnrwhs0gaK9fXTKx0Tw5Xwsd/bCPTTZNRAdpyzvoeORe9LYpw==}
 
@@ -2058,6 +2069,9 @@ packages:
 
   ofetch@1.4.1:
     resolution: {integrity: sha512-QZj2DfGplQAr2oj9KzceK9Hwz6Whxazmn85yYeVuS3u9XTMOGMRx0kO95MQ+vLsj/S/NwBDMMLU5hpxvI6Tklw==}
+
+  ogl@1.0.11:
+    resolution: {integrity: sha512-kUpC154AFfxi16pmZUK4jk3J+8zxwTWGPo03EoYA8QPbzikHoaC82n6pNTbd+oEaJonaE8aPWBlX7ad9zrqLsA==}
 
   ohash@1.1.4:
     resolution: {integrity: sha512-FlDryZAahJmEF3VR3w1KogSEdWX3WhA5GPakFx4J81kEAiHyLMpdLLElS8n8dfNadMgAne/MywcvmogzscVt4g==}
@@ -3481,7 +3495,7 @@ snapshots:
       - vinxi
       - vite
 
-  '@tailwindcss/typography@0.5.15(tailwindcss@3.4.15)':
+  '@tailwindcss/typography@0.5.16(tailwindcss@3.4.15)':
     dependencies:
       lodash.castarray: 4.4.0
       lodash.isplainobject: 4.0.6
@@ -4502,6 +4516,10 @@ snapshots:
     dependencies:
       yallist: 3.1.1
 
+  lucide-solid@0.542.0(solid-js@1.9.3):
+    dependencies:
+      solid-js: 1.9.3
+
   magic-string@0.30.12:
     dependencies:
       '@jridgewell/sourcemap-codec': 1.5.0
@@ -4734,6 +4752,8 @@ snapshots:
       destr: 2.0.3
       node-fetch-native: 1.6.4
       ufo: 1.5.4
+
+  ogl@1.0.11: {}
 
   ohash@1.1.4: {}
 
