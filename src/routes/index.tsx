@@ -1,25 +1,21 @@
-import type { JSX } from "solid-js";
-import ProfileImg from "../assets/Profile.jpg";
-import AirwallexIcon from "../assets/airwallex.svg";
-import CultureAmpIcon from "../assets/cultureampicon.svg";
-import ReadCloudIcon from "../assets/readcloud.svg";
-import LaptopIcon from "../assets/Laptop.png";
-import Primary from "../assets/primary.svg";
-import RMITIcon from "../assets/rmit.png";
-import UmiIcon from "../assets/umi.png";
-import PlantBrokerIcon from "../assets/plantbroker.avif";
-import { EvervaultCard } from "../components/EvervaultCard";
-import { cn } from "../lib/cn";
 import {
+  Code,
+  LinkedinIcon,
   LucideProps,
-  Sparkle,
-  ScrollText,
   MailIcon,
   PhoneIcon,
-  LinkedinIcon,
-  GlobeIcon,
-  Code,
+  ScrollText,
 } from "lucide-solid";
+import type { JSX } from "solid-js";
+import ProfileImg from "../assets/Profile.png";
+import AirwallexIcon from "../assets/airwallex.svg";
+import CultureAmpIcon from "../assets/cultureampicon.svg";
+import PlantBrokerIcon from "../assets/plantbroker.avif";
+import Primary from "../assets/primary.svg";
+import ReadCloudIcon from "../assets/readcloud.svg";
+import RMITIcon from "../assets/rmit.png";
+import UmiIcon from "../assets/umi.png";
+import { cn } from "../lib/cn";
 
 const ExperienceCard = (props: {
   class?: string;
@@ -106,7 +102,7 @@ const App = () => {
 
                 <div class="ml-auto flex gap-2 items-center print:hidden">
                   <a
-                    href="/Daniel Manning - Resume.pdf"
+                    href="/Daniel Manning - Software Engineer.pdf"
                     download
                     class="whitespace-nowrap inline-block rounded bg-slate-800 text-white px-3 py-1 text-sm hover:bg-slate-700"
                     aria-label="Download résumé (PDF)"
