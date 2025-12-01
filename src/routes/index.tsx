@@ -433,9 +433,8 @@ const App = () => {
                   It's packed with useful knowledge about what to say and when,
                   and about relevant legislation. We're now improving it's user
                   experience, ability to collect more meaningful and
-                  researchable data, and use lessons learned making{" "}
-                  <a href="#atlas">Atlas</a> to greatly improve information
-                  retrieval and conversational quality.
+                  researchable data, and use cutting edge research to greatly
+                  improve information retrieval and conversational quality.
                 </p>
               </ExperienceCard>
               <ExperienceCard imgSrc={PlantBrokerIcon}>
