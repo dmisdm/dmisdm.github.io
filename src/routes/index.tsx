@@ -18,8 +18,8 @@ import {
   PhoneIcon,
   LinkedinIcon,
   GlobeIcon,
+  Code,
 } from "lucide-solid";
-import Particles from "~/components/Particles";
 
 const ExperienceCard = (props: {
   class?: string;
@@ -33,7 +33,7 @@ const ExperienceCard = (props: {
         {props.imgSrc ? (
           <img src={props.imgSrc} alt="Logo" class="h-8 w-8 -mt-2 m-0" />
         ) : props.Icon ? (
-          <props.Icon class="h-8 w-8 -mt-2 m-0" />
+          <props.Icon class="h-8 w-8 -mt-2.5 m-0" />
         ) : (
           <div class="bg-gray-500 rounded-full h-4 w-4" />
         )}
@@ -66,19 +66,7 @@ const CustomTitle = (props: { children: JSX.Element }) => (
 const App = () => {
   return (
     <div>
-      <div class="size-full fixed top-0 left-0 -z-10 print:hidden">
-        <Particles
-          particleColors={["#eee", "#fff"]}
-          particleCount={200}
-          particleSpread={5}
-          speed={0.03}
-          particleBaseSize={100}
-          moveParticlesOnHover={true}
-          alphaParticles={false}
-          disableRotation={false}
-          particleHoverFactor={0.1}
-        />
-      </div>
+      <div class="size-full fixed top-0 left-0 -z-10 print:hidden"></div>
       <div class="flex flex-col min-h-screen print:text-[12px] font-mono tracking-tight">
         <main class="flex-1 print:pt-12 lg:pt-[20vh] pt-12 max-w-2xl print:max-w-4xl mx-auto px-4 pb-4 grid lg:gap-32 gap-20 print:gap-12 [&_h3>a]:font-semibold">
           <div class="grid sm:grid-cols-3  sm:place-items-stretch gap-2">
@@ -138,11 +126,35 @@ const App = () => {
           </div>
 
           <section class="grid gap-6">
-            <h2 class="text-start text-xl text-slate-500 mb-0 font-serif lg:ps-20 ps-12 print:p-0">
+            <h2 class="uppercase text-start text-lg tracking-wide text-slate-500 mb-0 font-serif lg:ps-20 ps-12 print:p-0">
               Experience
               <hr />
             </h2>
             <div class="grid gap-16 print:gap-8">
+              <ExperienceCard Icon={Code}>
+                <h3 class="m-0 ">
+                  <span>Freelance</span> (Jun 2025 - Current)
+                </h3>
+                <ul class="m-0">
+                  <li>
+                    Atlas – a course-integrated AI tutor. I've been designing
+                    and implementing chat interfaces, admin pages, as well as
+                    backend systems that orchestrate agentic workflows (using
+                    Mastra and Inngest).
+                  </li>
+                  <li>
+                    Umi – an aligned, and guarded, chatbot that supports people
+                    through online image-based abuse. Developed in partnership
+                    with RMIT - Global, Urban, and Social Studies.
+                  </li>
+                  <li>
+                    The Plant Broker – a Shopify store selling online plants to
+                    regional Melbourne. For this client, I've built an efficient
+                    stock scraping and sync engine that automates mass inventory
+                    and price changes.
+                  </li>
+                </ul>
+              </ExperienceCard>
               <ExperienceCard imgSrc={Primary}>
                 <h3 class="m-0 ">
                   <a href="https://primary.tech">Primary</a> (Aug 2024 - Jun
@@ -330,7 +342,7 @@ const App = () => {
           </section>
 
           <section class="grid gap-6">
-            <h2 class="text-start mb-0 font-serif text-xl lg:ps-20 print:ps-0 ps-12 text-slate-500 ">
+            <h2 class="text-start mb-0 font-serif text-lg tracking-wide uppercase lg:ps-20 print:ps-0 ps-12 text-slate-500 ">
               Education
               <hr />
             </h2>
@@ -416,7 +428,7 @@ const App = () => {
           </section>
 
           <section class="grid gap-6 print:mt-4">
-            <h2 class="text-start mb-0 font-serif text-xl text-slate-500 print:ps-0 lg:ps-20 ps-12 break-before-page ">
+            <h2 class="text-start mb-0 font-serif text-lg tracking-wide uppercase text-slate-500 print:ps-0 lg:ps-20 ps-12 break-before-page ">
               Projects <hr />
             </h2>
             <div class="grid gap-16 print:gap-8">
