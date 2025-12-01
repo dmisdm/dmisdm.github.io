@@ -76,8 +76,7 @@ const App = () => {
                   Daniel Manning
                 </h2>
                 <div class="flex gap-1 print:mt-2">
-                  <p class="m-0 text-center">Software Engineer,</p>
-                  <p class="m-0 text-center">Co-founder.</p>
+                  <p class="m-0 text-center">Software Engineer</p>
                 </div>
               </div>
             </div>
