@@ -19,7 +19,7 @@
     "isDynamicEntry": true
   },
   "src/routes/index.tsx?pick=default&pick=$css": {
-    "file": "assets/index-CAcCO8ZR.js",
+    "file": "assets/index-CjsgBbtw.js",
     "name": "index",
     "src": "src/routes/index.tsx?pick=default&pick=$css",
     "isEntry": true,
@@ -33,7 +33,7 @@
     ]
   },
   "virtual:$vinxi/handler/client": {
-    "file": "assets/client-z7FsdfQ8.js",
+    "file": "assets/client-DiN2KUvr.js",
     "name": "client",
     "src": "virtual:$vinxi/handler/client",
     "isEntry": true,
