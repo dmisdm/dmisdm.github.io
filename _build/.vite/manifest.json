@@ -1,6 +1,6 @@
 {
-  "_web-DRpiTjlP.js": {
-    "file": "assets/web-DRpiTjlP.js",
+  "_web-TJJiNu-c.js": {
+    "file": "assets/web-TJJiNu-c.js",
     "name": "web"
   },
   "src/assets/Profile.jpg": {
@@ -19,13 +19,13 @@
     "isDynamicEntry": true
   },
   "src/routes/index.tsx?pick=default&pick=$css": {
-    "file": "assets/index-Cf8rPbcx.js",
+    "file": "assets/index-CAcCO8ZR.js",
     "name": "index",
     "src": "src/routes/index.tsx?pick=default&pick=$css",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_web-DRpiTjlP.js"
+      "_web-TJJiNu-c.js"
     ],
     "assets": [
       "assets/Profile-BXDLJoxj.jpg",
@@ -33,19 +33,19 @@
     ]
   },
   "virtual:$vinxi/handler/client": {
-    "file": "assets/client-BRe11ZSv.js",
+    "file": "assets/client-z7FsdfQ8.js",
     "name": "client",
     "src": "virtual:$vinxi/handler/client",
     "isEntry": true,
     "imports": [
-      "_web-DRpiTjlP.js"
+      "_web-TJJiNu-c.js"
     ],
     "dynamicImports": [
       "src/routes/[...404].tsx?pick=default&pick=$css",
       "src/routes/index.tsx?pick=default&pick=$css"
     ],
     "css": [
-      "assets/client-Cy6JVPns.css"
+      "assets/client-DHO2OVGl.css"
     ]
   }
 }
