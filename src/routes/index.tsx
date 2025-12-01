@@ -143,31 +143,6 @@ const App = () => {
               <hr />
             </h2>
             <div class="grid gap-16 print:gap-8">
-              <ExperienceCard Icon={Sparkle}>
-                <h3 class="m-0 pb-4 scroll-m-24" id="atlas">
-                  <span>Atlas (Aug 2025 - Current)</span>
-                  <br />
-                  <small>Co-founder</small>
-                </h3>
-
-                <p class="m-0">
-                  What started as{" "}
-                  <i>"an LLM with course content for students"</i>
-                  &nbsp; has now gained traction at RMIT and gotten validation
-                  in a ~350 student experiment. My business partner, Ed, and I
-                  are now successful candidates in{" "}
-                  <a href="https://www.rmit.edu.au/partner/hubs/activator/launch-hub">
-                    RMIT's LaunchHub program
-                  </a>
-                  {", "}
-                  and are doing everything we can to{" "}
-                  <strong>
-                    find safe ways to use AI in education that preserve, and
-                    accelerate, learning quality and academic integrity
-                  </strong>
-                  .
-                </p>
-              </ExperienceCard>
               <ExperienceCard imgSrc={Primary}>
                 <h3 class="m-0 ">
                   <a href="https://primary.tech">Primary</a> (Aug 2024 - Jun
@@ -598,17 +573,6 @@ function ContactDetails({ hideLabels }: { hideLabels?: boolean }) {
           <LinkedInLink />
         </strong>
       </div>
-      <div>
-        {!hideLabels && (
-          <>
-            <small>Web</small>
-            <br />
-          </>
-        )}
-        <strong>
-          <WebLink />
-        </strong>
-      </div>
     </>
   );
 }
@@ -627,10 +591,6 @@ function ContactDetailsCompact() {
         <LinkedinIcon class="inline size-4 me-2" />
         LinkedIn
       </LinkedInLink>
-      <WebLink>
-        <GlobeIcon class="inline size-4 me-2" />
-        Web
-      </WebLink>
     </>
   );
 }
