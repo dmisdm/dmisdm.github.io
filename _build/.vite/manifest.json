@@ -3,9 +3,9 @@
     "file": "assets/web-TJJiNu-c.js",
     "name": "web"
   },
-  "src/assets/Profile.jpg": {
-    "file": "assets/Profile-BXDLJoxj.jpg",
-    "src": "src/assets/Profile.jpg"
+  "src/assets/Profile.png": {
+    "file": "assets/Profile-DgB0UWBv.png",
+    "src": "src/assets/Profile.png"
   },
   "src/assets/plantbroker.avif": {
     "file": "assets/plantbroker-B-_i4_-b.avif",
@@ -19,7 +19,7 @@
     "isDynamicEntry": true
   },
   "src/routes/index.tsx?pick=default&pick=$css": {
-    "file": "assets/index-CjsgBbtw.js",
+    "file": "assets/index-DuEusFeH.js",
     "name": "index",
     "src": "src/routes/index.tsx?pick=default&pick=$css",
     "isEntry": true,
@@ -28,12 +28,12 @@
       "_web-TJJiNu-c.js"
     ],
     "assets": [
-      "assets/Profile-BXDLJoxj.jpg",
+      "assets/Profile-DgB0UWBv.png",
       "assets/plantbroker-B-_i4_-b.avif"
     ]
   },
   "virtual:$vinxi/handler/client": {
-    "file": "assets/client-DiN2KUvr.js",
+    "file": "assets/client-BNnLWsbO.js",
     "name": "client",
     "src": "virtual:$vinxi/handler/client",
     "isEntry": true,
