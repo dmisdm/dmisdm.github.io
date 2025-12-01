@@ -107,7 +107,7 @@ const App = () => {
 
                 <div class="ml-auto flex gap-2 items-center print:hidden">
                   <a
-                    href="/resume.pdf"
+                    href="/Daniel Manning - Resume.pdf"
                     download
                     class="whitespace-nowrap inline-block rounded bg-slate-800 text-white px-3 py-1 text-sm hover:bg-slate-700"
                     aria-label="Download résumé (PDF)"
