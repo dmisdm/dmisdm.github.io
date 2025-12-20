@@ -4,7 +4,7 @@
     "name": "web"
   },
   "src/assets/Profile.png": {
-    "file": "assets/Profile-DgB0UWBv.png",
+    "file": "assets/Profile-CrMpCMGO.png",
     "src": "src/assets/Profile.png"
   },
   "src/assets/plantbroker.avif": {
@@ -19,7 +19,7 @@
     "isDynamicEntry": true
   },
   "src/routes/index.tsx?pick=default&pick=$css": {
-    "file": "assets/index-DuEusFeH.js",
+    "file": "assets/index-DIKyrgRl.js",
     "name": "index",
     "src": "src/routes/index.tsx?pick=default&pick=$css",
     "isEntry": true,
@@ -28,12 +28,12 @@
       "_web-TJJiNu-c.js"
     ],
     "assets": [
-      "assets/Profile-DgB0UWBv.png",
+      "assets/Profile-CrMpCMGO.png",
       "assets/plantbroker-B-_i4_-b.avif"
     ]
   },
   "virtual:$vinxi/handler/client": {
-    "file": "assets/client-BNnLWsbO.js",
+    "file": "assets/client-CBlPXh6j.js",
     "name": "client",
     "src": "virtual:$vinxi/handler/client",
     "isEntry": true,
@@ -45,7 +45,7 @@
       "src/routes/index.tsx?pick=default&pick=$css"
     ],
     "css": [
-      "assets/client-DHO2OVGl.css"
+      "assets/client-BBJYxLt4.css"
     ]
   }
 }
