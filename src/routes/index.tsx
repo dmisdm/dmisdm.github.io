@@ -67,12 +67,15 @@ const App = () => {
         <main class="flex-1 print:pt-12 lg:pt-[20vh] pt-12 max-w-2xl print:max-w-4xl mx-auto px-4 pb-4 grid lg:gap-32 gap-20 print:gap-12 [&_h3>a]:font-semibold">
           <div class="grid sm:grid-cols-3  sm:place-items-stretch gap-2">
             <div class="grid   gap-4   rounded-lg  col-span-full lg:col-span-full">
-              <div class="max-w-none relative prose prose-sm lg:flex print:flex justify-between items-center justify-self-stretch">
+              <div class="max-w-none relative prose prose-sm flex print:flex justify-between items-center justify-self-stretch">
                 <h2 class="m-0 font-serif not-prose text-2xl">
                   Daniel Manning
                 </h2>
                 <div class="flex gap-1 print:mt-2">
-                  <p class="m-0 text-center">Software Engineer</p>
+                  <p class="m-0 text-end">
+                    Software Engineer <br />
+                    <span class="text-xs">Melbourne, Australia</span>
+                  </p>
                 </div>
               </div>
             </div>
