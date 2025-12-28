@@ -96,9 +96,10 @@ const App = () => {
                       Hey - I'm Dan.
                     </h1>
                     <p class="m-0 text-sm text-slate-700">
-                      I design and build full-stack applications, focusing on
-                      seamless user experiences and impactful, high-quality
-                      projects.
+                      I love designing and building full-stack applications,
+                      crafting user experiences on impactful projects, and
+                      overall, working in motivated communities that value
+                      creativity and innovation.
                     </p>
                   </div>
                 </div>
@@ -131,14 +132,15 @@ const App = () => {
             <div class="grid gap-16 print:gap-8">
               <ExperienceCard Icon={Code}>
                 <h3 class="m-0 ">
-                  <span>Freelance</span> (Jun 2025 - Current)
+                  <span>Freelance Software Engineer</span> (Jun 2025 - Current)
                 </h3>
                 <ul class="m-0">
+                  <span class="text-xs text-slate-500 mb-1">Recent works</span>
                   <li>
                     Atlas – a course-integrated AI tutor. I've been designing
                     and implementing chat interfaces, admin pages, as well as
-                    backend systems that orchestrate agentic workflows (using
-                    Mastra and Inngest).
+                    backend systems to support robust AI workflows. Lately I've
+                    been learning a lot about AI SDK, Mastra and Inngest.
                   </li>
                   <li>
                     Umi – an aligned, and guarded, chatbot that supports people
@@ -150,6 +152,11 @@ const App = () => {
                     regional Melbourne. For this client, I've built an efficient
                     stock scraping and sync engine that automates mass inventory
                     and price changes.
+                  </li>
+                  <li>
+                    DelphiIQ – a financial projection calculator to help Aussies
+                    understand what actions they need to take now in order to
+                    retire without financial stress and fulfil their goals.
                   </li>
                 </ul>
               </ExperienceCard>
