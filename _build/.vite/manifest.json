@@ -19,7 +19,7 @@
     "isDynamicEntry": true
   },
   "src/routes/index.tsx?pick=default&pick=$css": {
-    "file": "assets/index-C28ZAiii.js",
+    "file": "assets/index-GGyyeNk6.js",
     "name": "index",
     "src": "src/routes/index.tsx?pick=default&pick=$css",
     "isEntry": true,
@@ -33,7 +33,7 @@
     ]
   },
   "virtual:$vinxi/handler/client": {
-    "file": "assets/client-XQ6F7d1q.js",
+    "file": "assets/client-DOErNL6u.js",
     "name": "client",
     "src": "virtual:$vinxi/handler/client",
     "isEntry": true,
@@ -45,7 +45,7 @@
       "src/routes/index.tsx?pick=default&pick=$css"
     ],
     "css": [
-      "assets/client-BBJYxLt4.css"
+      "assets/client-Cwp7Tj5F.css"
     ]
   }
 }
