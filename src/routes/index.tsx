@@ -134,13 +134,25 @@ const App = () => {
                 <h3 class="m-0 ">
                   <span>Freelance Software Engineer</span> (Jun 2025 - Current)
                 </h3>
+                <div class="pt-2 pb-4  inline-flex gap-2 flex-wrap">
+                  <InlinePill class="bg-sky-500">React</InlinePill>
+                  <InlinePill class="bg-blue-500">TypeScript</InlinePill>
+                  <InlinePill class="bg-cyan-400">Tailwind</InlinePill>
+                  <InlinePill class="bg-green-500">Node.js</InlinePill>
+                  <InlinePill class="bg-cyan-500">Tanstack Start</InlinePill>
+                  <InlinePill class="bg-neutral-700">Next.js</InlinePill>
+                  <InlinePill class="bg-sky-600">PostgreSQL</InlinePill>
+                  <InlinePill class="bg-neutral-700">Drizzle</InlinePill>
+                  <InlinePill class="bg-emerald-400">Mastra</InlinePill>
+                  <InlinePill class="bg-neutral-700">AI SDK</InlinePill>
+                  <InlinePill class="bg-[#2d9f65cc]">Inngest</InlinePill>
+                </div>
+
                 <ul class="m-0">
-                  <span class="text-xs text-slate-500 mb-1">Recent works</span>
                   <li>
                     Atlas – a course-integrated AI tutor. I've been designing
                     and implementing chat interfaces, admin pages, as well as
-                    backend systems to support robust AI workflows. Lately I've
-                    been learning a lot about AI SDK, Mastra and Inngest.
+                    backend systems to support robust AI workflows.
                   </li>
                   <li>
                     Umi – an aligned, and guarded, chatbot that supports people
@@ -149,14 +161,9 @@ const App = () => {
                   </li>
                   <li>
                     The Plant Broker – a Shopify store selling online plants to
-                    regional Melbourne. For this client, I've built an efficient
-                    stock scraping and sync engine that automates mass inventory
-                    and price changes.
-                  </li>
-                  <li>
-                    DelphiIQ – a financial projection calculator to help Aussies
-                    understand what actions they need to take now in order to
-                    retire without financial stress and fulfil their goals.
+                    regional Melbourne. I've built an efficient stock scraping
+                    and sync engine that automates mass inventory and price
+                    changes.
                   </li>
                 </ul>
               </ExperienceCard>
@@ -169,11 +176,11 @@ const App = () => {
                 </h3>
 
                 <div class="pt-2 pb-4  inline-flex gap-2 flex-wrap">
-                  <InlinePill class="bg-neutral-700">Remix</InlinePill>
                   <InlinePill class="bg-sky-500">React</InlinePill>
                   <InlinePill class="bg-blue-500">TypeScript</InlinePill>
                   <InlinePill class="bg-cyan-400">Tailwind</InlinePill>
-                  <InlinePill class="bg-green-500">NodeJS</InlinePill>
+                  <InlinePill class="bg-neutral-700">Remix</InlinePill>
+                  <InlinePill class="bg-green-500">Node.js</InlinePill>
                   <InlinePill class="bg-sky-600">PostgreSQL</InlinePill>
                   <InlinePill class="bg-indigo-500">Prisma</InlinePill>
                 </div>
@@ -207,7 +214,7 @@ const App = () => {
                   <InlinePill class="bg-sky-500">React</InlinePill>
                   <InlinePill class="bg-blue-500">TypeScript</InlinePill>
                   <InlinePill class="bg-cyan-400">Tailwind</InlinePill>
-                  <InlinePill class="bg-green-500">NodeJS</InlinePill>
+                  <InlinePill class="bg-green-500">Node.js</InlinePill>
                   <InlinePill class="bg-slate-700">Deno</InlinePill>
                   <InlinePill class="bg-yellow-500">AWS</InlinePill>
                   <InlinePill class="bg-sky-600">PostgreSQL</InlinePill>
@@ -235,12 +242,6 @@ const App = () => {
                     Maintained and/or migrated legacy PHP, Python, and Java +
                     Kotlin systems.
                   </li>
-                  <li>
-                    Exposed to a wide variety of tools and frameworks, including
-                    Tauri, React Native and Expo as native app solutions.
-                    Additionally, education management infrastructure such as
-                    Canvas, Moodle, SchoolBox, and VETtrak in particular.
-                  </li>
                 </ul>
               </ExperienceCard>
               {/* Print:margin top hack - just to get it a bit below the top of a page */}
@@ -254,7 +255,7 @@ const App = () => {
                 <div class="pt-2 pb-4  inline-flex gap-2 flex-wrap">
                   <InlinePill class="bg-sky-500">React</InlinePill>
                   <InlinePill class="bg-blue-500">TypeScript</InlinePill>
-                  <InlinePill class="bg-green-500">NodeJS</InlinePill>
+                  <InlinePill class="bg-green-500">Node.js</InlinePill>
                   <InlinePill class="bg-yellow-500">AWS</InlinePill>
                   <InlinePill class="bg-fuchsia-500">Kotlin</InlinePill>
                   <InlinePill class="bg-sky-400">Elm</InlinePill>
@@ -263,7 +264,7 @@ const App = () => {
                 <ul class="m-0">
                   <li>
                     Contributed to full-stack development projects involving
-                    React, TypeScript, NodeJS, and Kotlin.
+                    React, TypeScript, Node.js, and Kotlin.
                   </li>
                   <li>
                     Maintained the in-house design system (Kaizen Design System)
@@ -290,7 +291,7 @@ const App = () => {
                 <div class="pt-2 pb-4  inline-flex gap-2 flex-wrap">
                   <InlinePill class="bg-sky-500">React</InlinePill>
                   <InlinePill class="bg-blue-500">TypeScript</InlinePill>
-                  <InlinePill class="bg-green-500">NodeJS</InlinePill>
+                  <InlinePill class="bg-green-500">Node.js</InlinePill>
                   <InlinePill class="bg-green-400">MongoDB</InlinePill>
                   <InlinePill class="bg-yellow-500">AWS</InlinePill>
                   <InlinePill class="bg-red-500">Java</InlinePill>
@@ -298,8 +299,8 @@ const App = () => {
                 </div>
                 <ul class="m-0">
                   <li>
-                    Developed scalable features using React, TypeScript, NodeJS,
-                    and MongoDB.
+                    Developed scalable features using React, TypeScript,
+                    Node.js, and MongoDB.
                   </li>
                   <li>
                     Migrated infrastructure from Docker-based deployments on
@@ -466,7 +467,7 @@ const App = () => {
                   Melbourne, where I develop backend automation solutions to
                   solve stock/logistical problems that are key to the business'
                   success. This project gave me a lot of experience in scraping,
-                  background jobs in NextJS, and Shopify's domain models (their
+                  background jobs in Next.js, and Shopify's domain models (their
                   GraphQL schema in particular).
                 </p>
               </ExperienceCard>
